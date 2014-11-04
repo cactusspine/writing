@@ -240,45 +240,49 @@ Text for this section.
 \section*{Content}
 Text and results for this section, as per the individual journal's instructions for authors. %\cite{koon,oreg,khar,zvai,xjon,schn,pond,smith,marg,hunn,advi,koha,mouse}
 
-\section*{Section title}
-Text for this section \ldots
+\section*{Characteristic of microRNA Prediction & Evidence Databases}
+There are many characteristics of microRNA:mRNA target binding that are taken into account - in different combinations - for each microRNA prediction database. We begin with a review of these criteria. \ldots
+\subsection*{Common features of miRNA Prediction Algorithms}
+Common features for the Prediction tool.\cite{peter}
+Special features of these Prediction tools\ldots
+microRNA:Target predictions algorithm each used unique combinations of these features to perform similar function, thus it is useful to have a look at the distribution and coveration of these predictions across databases. Table \ref{table:interactionCount} showed all the database we considered in this study and the interactions they have covered. Table \ref{table:features} showed all the features that has been used for the prediction design for each database.
 \subsection*{Sub-heading for section}
 Text for this sub-heading \ldots
 \subsubsection*{Sub-sub heading for section}
 Text for this sub-sub-heading \ldots
-\paragraph*{Sub-sub-sub heading for section}
-Text for this sub-sub-sub-heading \ldots
-In this section we examine the growth rate of the mean of $Z_0$, $Z_1$ and $Z_2$. In
-addition, we examine a common modeling assumption and note the
-importance of considering the tails of the extinction time $T_x$ in
-studies of escape dynamics.
-We will first consider the expected resistant population at $vT_x$ for
-some $v>0$, (and temporarily assume $\alpha=0$)
-%
-\[
- E \bigl[Z_1(vT_x) \bigr]= E
-\biggl[\mu T_x\int_0^{v\wedge
-1}Z_0(uT_x)
-\exp \bigl(\lambda_1T_x(v-u) \bigr)\,du \biggr].
-\]
-%
-If we assume that sensitive cells follow a deterministic decay
-$Z_0(t)=xe^{\lambda_0 t}$ and approximate their extinction time as
-$T_x\approx-\frac{1}{\lambda_0}\log x$, then we can heuristically
-estimate the expected value as
-%
-\begin{eqnarray}\label{eqexpmuts}
-E\bigl[Z_1(vT_x)\bigr] &=& \frac{\mu}{r}\log x
-\int_0^{v\wedge1}x^{1-u}x^{({\lambda_1}/{r})(v-u)}\,du
-\nonumber\\
-&=& \frac{\mu}{r}x^{1-{\lambda_1}/{\lambda_0}v}\log x\int_0^{v\wedge
-1}x^{-u(1+{\lambda_1}/{r})}\,du
-\nonumber\\
-&=& \frac{\mu}{\lambda_1-\lambda_0}x^{1+{\lambda_1}/{r}v} \biggl(1-\exp \biggl[-(v\wedge1) \biggl(1+
-\frac{\lambda_1}{r}\biggr)\log x \biggr] \biggr).
-\end{eqnarray}
-%
-Thus we observe that this expected value is finite for all $v>0$ (also see \cite{koon,khar,zvai,xjon,marg}).
+%\paragraph*{Sub-sub-sub heading for section}
+%Text for this sub-sub-sub-heading \ldots
+%In this section we examine the growth rate of the mean of $Z_0$, $Z_1$ and $Z_2$. In
+%addition, we examine a common modeling assumption and note the
+%importance of considering the tails of the extinction time $T_x$ in
+%studies of escape dynamics.
+%We will first consider the expected resistant population at $vT_x$ for
+%some $v>0$, (and temporarily assume $\alpha=0$)
+%%
+%\[
+% E \bigl[Z_1(vT_x) \bigr]= E
+%\biggl[\mu T_x\int_0^{v\wedge
+%1}Z_0(uT_x)
+%\exp \bigl(\lambda_1T_x(v-u) \bigr)\,du \biggr].
+%\]
+%%
+%If we assume that sensitive cells follow a deterministic decay
+%$Z_0(t)=xe^{\lambda_0 t}$ and approximate their extinction time as
+%$T_x\approx-\frac{1}{\lambda_0}\log x$, then we can heuristically
+%estimate the expected value as
+%%
+%\begin{eqnarray}\label{eqexpmuts}
+%E\bigl[Z_1(vT_x)\bigr] &=& \frac{\mu}{r}\log x
+%\int_0^{v\wedge1}x^{1-u}x^{({\lambda_1}/{r})(v-u)}\,du
+%\nonumber\\
+%&=& \frac{\mu}{r}x^{1-{\lambda_1}/{\lambda_0}v}\log x\int_0^{v\wedge
+%1}x^{-u(1+{\lambda_1}/{r})}\,du
+%\nonumber\\
+%&=& \frac{\mu}{\lambda_1-\lambda_0}x^{1+{\lambda_1}/{r}v} \biggl(1-\exp \biggl[-(v\wedge1) \biggl(1+
+%\frac{\lambda_1}{r}\biggr)\log x \biggr] \biggr).
+%\end{eqnarray}
+%%
+%Thus we observe that this expected value is finite for all $v>0$ (also see \cite{koon,khar,zvai,xjon,marg,peter}).
 
 
 
@@ -354,17 +358,41 @@ Thus we observe that this expected value is finite for all $v>0$ (also see \cite
 %%                               %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%% Use of \listoftables is discouraged.
-%%
-\section*{Tables}
+%%% Use of \listoftables is discouraged.
+%%%
+% \section*{Tables}
+%\begin{table}[h!]
+%\caption{Sample table title. This is where the description of the table should go.}
+%      \begin{tabular}{cccc}
+%        \hline
+%           & B1  &B2   & B3\\ \hline
+%        A1 & 0.1 & 0.2 & 0.3\\
+%        A2 & ... & ..  & .\\
+%        A3 & ..  & .   & .\\ \hline
+%      \end{tabular}
+%\end{table}
+%%%%%%%%%%%%%Table 1%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{table}[h!]
-\caption{Sample table title. This is where the description of the table should go.}
-      \begin{tabular}{cccc}
+\caption{Summary of interactions in all the Prediction & Evidence Database}
+\label{table:interactionCount}%this line is to store the tables number for reference in the tex
+      \begin{tabular}{ccccc}
         \hline
-           & B1  &B2   & B3\\ \hline
-        A1 & 0.1 & 0.2 & 0.3\\
-        A2 & ... & ..  & .\\
-        A3 & ..  & .   & .\\ \hline
+        Databases	& Details  & Mapped Interactions   & MicroRNAs	& mapped targets\\ \hline
+        Targetscan & conservation & 0.2 & 0.3 & \\
+        Targetscan & non conservation & ..  & . & \\
+        PITA & ..  & .   & . & \\ \hline
+      \end{tabular}
+\end{table}
+%%%%%%%%%%%%%%%%Table 2%%%%%%%%%%%%%the features which are used in each algorithm
+\begin{table}[h!]
+\caption{Table of the features which are used in each database}
+\label{table:features}%this line is to store the tables number for reference in the tex, currently not defined yet
+      \begin{tabular}{ccccc}
+        \hline
+        Databases	& Conservation  & Binding Energy   & MicroRNAs	& mapped targets\\ \hline
+        Targetscan & - & X & X & \\
+        Targetscan & non & ..  & . & \\
+        PITA & ..  & .   & . & \\ \hline
       \end{tabular}
 \end{table}
 

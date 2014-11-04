@@ -1,0 +1,50 @@
+This is BibTeX, Version 0.99c (TeX Live 2009/Debian)
+The top-level auxiliary file: bmc_article.aux
+The style file: bmc-mathphys.bst
+Reallocated wiz_functions (elt_size=4) to 6000 items from 472446405560.
+Database file #1: bmc_article.bib
+Warning--entry type for "khar" isn't style-file defined
+--line 43 of file bmc_article.bib
+Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
+You've used 6 entries,
+            7128 wiz_defined-function locations,
+            1156 strings with 9895 characters,
+and the built_in function-call counts, 157781 in all, are:
+= -- 29944
+> -- 161
+< -- 76
++ -- 19079
+- -- 65
+* -- 3512
+:= -- 27141
+add.period$ -- 7
+call.type$ -- 6
+change.case$ -- 80
+chr.to.int$ -- 126
+cite$ -- 6
+duplicate$ -- 509
+empty$ -- 1496
+format.name$ -- 192
+if$ -- 40769
+int.to.chr$ -- 1
+int.to.str$ -- 16
+missing$ -- 197
+newline$ -- 209
+num.names$ -- 33
+pop$ -- 261
+preamble$ -- 1
+purify$ -- 27
+quote$ -- 12
+skip$ -- 18257
+stack$ -- 0
+substring$ -- 14656
+swap$ -- 131
+text.length$ -- 103
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 234
+warning$ -- 0
+while$ -- 208
+width$ -- 0
+write$ -- 266
+(There was 1 warning)
